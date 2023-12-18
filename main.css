@@ -1,0 +1,186 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+  width: 7px;
+}
+*::-webkit-scrollbar:hover {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: #e8e7e4;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container-fluid {
+  background-color: #bbbbbb;
+}
+
+.channel-box {
+  width: 95vw;
+}
+
+.channel-wrapper .main {
+  width: calc(100vw - 420px);
+  background-color: white;
+  border-radius: 0 3px 3px 0;
+}
+.channel-wrapper .main .chat-portion {
+  overflow-y: auto;
+  max-height: calc(100vh - 48px);
+}
+.channel-wrapper .main .chat-portion .user .profile .chat {
+  cursor: pointer;
+}
+.channel-wrapper .main .chat-portion .user .profile .chat:hover {
+  text-decoration: underline;
+}
+.channel-wrapper .main .chat-portion .user .profile .on {
+  width: 7px;
+  height: 7px;
+  background-color: green;
+  border: white;
+  border-radius: 5px 5px;
+}
+.channel-wrapper .main .chat-portion .message-box {
+  height: 420px;
+  overflow-y: auto;
+}
+.channel-wrapper .main .chat-portion .message-box .line {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 100%);
+  height: 2px;
+}
+.channel-wrapper .main .chat-portion .message-box .chat .reply-tooltip {
+  height: 36px;
+  -moz-column-gap: 0.6rem;
+       column-gap: 0.6rem;
+  right: 10px;
+  top: -18px;
+}
+.channel-wrapper .main .chat-portion .message-box .chat .reply-tooltip button {
+  font-size: 14px;
+}
+.channel-wrapper .main .chat-portion .message-box .chat:hover {
+  background-color: #e8e7e4;
+}
+.channel-wrapper .main .chat-portion .message-box .chat:hover .reply-tooltip {
+  display: flex !important;
+}
+.channel-wrapper .main .chat-portion .add {
+  font-size: 12px;
+  cursor: pointer;
+}
+.channel-wrapper .main .chat-portion .add .chat:hover {
+  text-decoration: underline;
+}
+.channel-wrapper .main .message-text {
+  height: 120px;
+}
+.channel-wrapper .main .message-text textarea {
+  resize: none;
+  outline: none;
+}
+.channel-wrapper .main .message-send {
+  background-color: #f7f6f3;
+}
+.channel-wrapper .main .message-send .chat {
+  cursor: pointer;
+}
+.channel-wrapper .main .message-send .chat:hover {
+  background-color: #e8e7e4;
+}
+.channel-wrapper .side-bar {
+  background-color: #f7f6f3;
+  width: 420px;
+  border-radius: 3px 0 0 3px;
+  border-right: 1px solid lightgrey;
+}
+@media (max-width: 992px) {
+  .channel-wrapper .side-bar {
+    width: 250px;
+  }
+}
+.channel-wrapper .side-bar .search {
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.channel-wrapper .side-bar .search input {
+  width: 300px;
+  border-radius: 5px 5px;
+  outline: none;
+  border: 1px solid lightgray;
+  padding: 6px;
+  padding-left: 6px;
+  overflow-y: auto;
+}
+.channel-wrapper .side-bar .search .chat:hover {
+  background-color: #e8e7e4;
+}
+.channel-wrapper .side-bar .box {
+  height: calc(100vh - 220px);
+  overflow-y: auto;
+}
+.channel-wrapper .side-bar .box .chat {
+  cursor: pointer;
+  min-height: 57px;
+}
+.channel-wrapper .side-bar .box .chat:hover {
+  background-color: #e8e7e4;
+}
+.channel-wrapper .side-bar .box .chat p {
+  margin: 0;
+  font-size: 14px;
+}
+.channel-wrapper .side-bar .box .chat img {
+  width: 1.5r em;
+  height: 1.5rem;
+  border-color: red;
+  margin-right: 1rem;
+  border-radius: 5px 5px;
+}
+.channel-wrapper .side-bar .box .chat.chat-active {
+  background-color: #fbe49c;
+  position: relative;
+}
+.channel-wrapper .side-bar .box .online {
+  width: 9px;
+  height: 9px;
+  background-color: green;
+  border: white;
+  border-radius: 5px 5px;
+  position: absolute;
+}
+.channel-wrapper .side-bar .box .offline {
+  width: 9px;
+  height: 9px;
+  background-color: yellow;
+  border: white;
+  border-radius: 5px 5px;
+  position: absolute;
+}
+.channel-wrapper .side-bar .button {
+  position: sticky;
+  left: 19rem;
+}
+
+.message-date {
+  top: -20px;
+  z-index: 9;
+}
+.message-date .date p {
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 40px 40px;
+}/*# sourceMappingURL=main.css.map */
